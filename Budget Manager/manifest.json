@@ -1,0 +1,28 @@
+{
+	"manifest_version": 2,
+	"name": "Budget Manager",
+	"version": "1.0",
+	"description": "Extension for managing your budget online",
+	"icons":{
+		"128":"change128.png",
+		"64":"change64.png",
+		"16":"change16.png"
+	},
+	"browser_action":{
+		"default_icon":"change16.png",
+		"default_popup":"popup.html"
+	},
+
+	"options_page":"options.html",
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"presistent": false
+	},
+	
+	"permissions":[
+		"storage",
+		"notifications",
+		"contextMenus"
+	]
+}

@@ -11,9 +11,6 @@
 	"browser_action":{
 		"default_icon":"hello16.png",
 		"default_popup":"popup.html"
-	},
-	"permissions":[
-		"identity"
-	]
+	}
 
 }

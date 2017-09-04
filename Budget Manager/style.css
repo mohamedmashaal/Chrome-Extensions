@@ -1,0 +1,7 @@
+body{
+	background-image:linear-gradient(135deg, rgb(147, 206, 222) 0%, rgb(147, 206, 222) 5%, rgb(86, 186, 214) 33%, rgb(160, 73, 189) 84%, rgb(160, 73, 189) 100%);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	background-attachment: fixed;
+}
