@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+	"name": "Page Font Style",
+	"version": "1.0",
+	"description": "Extension for changing specific page",
+	"icons":{
+		"128":"text128.png",
+		"64":"text64.png",
+		"16":"text16.png"
+	},
+	"page_action":{
+		"default_icon":"text16.png",
+		"default_popup":"popup.html",
+		"default_title":"Page Font Style"
+	},
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"presistent": false
+	},
+	
+	"content_scripts":[
+		{
+			"matches":["https://developer.chrome.com/*"],
+			"js":["content.js","jquery-3.2.1.min.js"],
+			"css":["content.css"]
+		}
+	],
+
+	"permissions":[
+		"tabs",
+		"https://developer.chrome.com/*"
+	]
+}
