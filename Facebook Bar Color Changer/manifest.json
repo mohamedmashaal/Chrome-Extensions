@@ -1,0 +1,35 @@
+{
+	"manifest_version": 2,
+	"name": "Facebook Bar Color Changer",
+	"version": "1.0",
+	"description": "Extension for changing Facebook bar color ",
+	"icons":{
+		"128":"facebook128.png",
+		"64":"facebook64.png",
+		"16":"facebook16.png"
+	},
+	"page_action":{
+		"default_icon":"facebook16.png",
+		"default_popup":"popup.html",
+		"default_title":"FB bar Color Changer"
+	},
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"presistent": false
+	},
+	
+	"content_scripts":[
+		{
+			"matches":["https://www.facebook.com/*","https://www.facebook.com/"],
+			"js":["content.js","jquery-3.2.1.min.js"],
+			"css":["content.css"]
+		}
+	],
+
+	"permissions":[
+		"tabs",
+		"https://www.facebook.com/*",
+		"https://www.facebook.com/"
+	]
+}
