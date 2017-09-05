@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "SpeakIt",
+	"version": "1.0",
+	"description": "Extension for Speaking text",
+	"icons":{
+		"128":"speak128.png",
+		"64":"speak64.png",
+		"16":"speak16.png"
+	},
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"presistent": false
+	},
+	
+	"permissions":[
+		"contextMenus",
+		"tts"
+	]
+}
