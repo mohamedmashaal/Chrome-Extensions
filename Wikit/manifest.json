@@ -1,0 +1,21 @@
+{
+	"manifest_version": 2,
+	"name": "Wikit",
+	"version": "1.0",
+	"description": "Extension for searching over wikipedia",
+	"icons":{
+		"128":"wiki128.png",
+		"64":"wiki64.png",
+		"16":"wiki16.png"
+	},
+
+	"background":{
+		"scripts":["eventPage.js"],
+		"presistent": false
+	},
+	
+	"permissions":[
+		"tabs",
+		"contextMenus"
+	]
+}
